@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build STRANDED",
+      "type": "shell",
+      "command": "${workspaceFolder}\\build.bat",
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "Build STRANDED (debug)",
+      "type": "shell",
+      "command": "${workspaceFolder}\\build.bat debug",
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "Run self-test",
+      "type": "shell",
+      "command": "${workspaceFolder}\\build.bat test",
+      "group": "test",
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}

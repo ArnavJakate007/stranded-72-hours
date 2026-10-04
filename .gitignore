@@ -1,0 +1,7 @@
+build/
+dist/
+save.txt
+progress.txt
+*.exe
+tests/save.txt
+.vs/

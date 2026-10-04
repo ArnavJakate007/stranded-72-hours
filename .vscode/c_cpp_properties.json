@@ -1,0 +1,12 @@
+{
+  "configurations": [
+    {
+      "name": "MinGW",
+      "includePath": ["${workspaceFolder}/src", "${workspaceFolder}/external/raylib/include"],
+      "compilerPath": "C:/mingw64/bin/g++.exe",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "windows-gcc-x64"
+    }
+  ],
+  "version": 4
+}

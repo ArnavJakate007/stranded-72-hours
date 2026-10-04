@@ -1,0 +1,168 @@
+# id | speaker (- for narration) | blocks the clock (yes/no) | text
+# {0}, {1}, ... are filled in by the game.
+
+# --- intro (shown by the intro screen)
+intro_1 | - | yes | HALCYON. A research station of 40 people, orbiting a giant purple planet.
+intro_2 | - | yes | Earth is too far away to help anyone out here.
+intro_3 | - | yes | The lander ARK-7 carries five crew down to the frozen moon Kepler-X.
+intro_4 | - | yes | Twenty minutes from landing, a storm warning lights up every screen.
+intro_5 | hana | yes | HALCYON, this is ARK-7. Requesting abort. Repeat, abort.
+intro_6 | voss | yes | Negative, ARK-7. The mission is behind schedule. Continue your descent.
+intro_7 | hana | yes | ...Copy. Continuing.
+intro_8 | - | yes | The storm hits. The controls fail.
+intro_9 | - | yes | You are Commander Kiran Das. Your crew survived the crash, but Hana is missing and the air is leaking out.
+intro_10 | - | yes | Goal 1: reach HALCYON within 24 hours. Radio only gets through at Hours 8, 16 and 24, when the planet's magnetic field calms.
+intro_11 | - | yes | Goal 2: keep everyone alive until the rescue shuttle lands at Hour 72. You cannot carry everyone alone.
+
+# --- Act 1
+arjun_wake | arjun | no | Commander! You're awake. Main power is dead, we're on emergency lamps.
+arjun_cell | arjun | no | There is a spare power cell in Storage, the room south-east of here. Bring it to the Power Core in my room.
+maya_lights | maya | no | Lights! Commander, put one unit into OXYGEN. Open the Power Panel here at the core, or from the menu.
+elena_medical_too | elena | no | Medical needs power too. Two units, three problems. Your call.
+maya_beacon | maya | no | ...Wait. I am picking up a suit beacon. It is Hana, somewhere in the wreck field to the south-east.
+arjun_leak_hint | arjun | no | Air's flowing, but the leak is still eating it. Sealant is in the medical cabinet. Or hand the job to me.
+on_comms | maya | no | Comms is live. Transmitter charging.
+on_heater | arjun | no | Heat is back. My fingers thank you.
+on_medical | elena | no | Medical is up.
+elena_med_dark | elena | no | Medical is dark. Hana won't hold on long like this.
+hint_arjun | arjun | no | Boss, I fixed engines before you could walk. Let me take the next one.
+arjun_leak_done | arjun | no | Leak is sealed. Told you.
+hana_found1 | hana | yes | Commander... I knew someone would come. My leg is bad. I will follow you, slowly.
+hana_found2 | hana | yes | I asked them to abort. Voss refused. Remember that.
+elena_bed | elena | no | Get her on the bed. I need the trauma kit from the ARK-7 cargo bay, and Medical has to stay powered.
+elena_kit_ok | elena | no | Got it. With Medical powered she will pull through.
+elena_kit_dark | elena | no | Got it. But Medical is dark. Switch it on or this kit is useless.
+maya_hana_weak | maya | no | Hana's beacon is getting weaker. She doesn't have long.
+hana_recovered | hana | no | I can't fly yet, but I can still work. Use me.
+arjun_generator | arjun | no | The old wreck generator! That gives us one more power unit.
+
+# --- Act 2
+maya_act2 | maya | no | We need a transmitter on that ridge. Antenna dish, amplifier, a big power cell and some scrap.
+hint_maya | maya | no | You can't haul parts and solder at the same time. Next time, hand me the frame.
+maya_tx_built | maya | no | Transmitter is built. Power COMMS and give it four hours to charge.
+maya_tx_full | maya | no | Transmitter is fully charged. Take it from the console and get it up to the ridge.
+maya_antenna_up | maya | no | Antenna is up. Align it during a signal window. Next one: Hour {0}.
+maya_window_up | maya | no | The magnetic tide is calm. The window is open. Align the antenna!
+maya_window_none | maya | no | The magnetic tide is calm for one hour, and we have no antenna up. Next time.
+maya_hear | maya | yes | ...Static is clearing. They hear us. They actually hear us!
+voss_8 | voss | yes | ARK-7, this is Director Voss. We read you. A supply pod will land at Hour 20. Report your status at Hour 32: 40 percent colony health.
+voss_16 | voss | yes | ARK-7... we had assumed you were lost. Expect storm warnings from us. Status report at Hour 32: 50 percent colony health.
+voss_24 | voss | yes | ARK-7. HALCYON held a memorial for you this morning. Status report at Hour 32: 60 percent colony health.
+maya_memorial | maya | yes | A memorial. My sister will have heard it.
+voss_final | voss | yes | The shuttle launches now and lands at Hour 72. Keep your people alive until then.
+
+# --- general
+elena_critical | elena | no | {0} is critical. Crew health will start dropping.
+elena_lost | elena | yes | We lost {0}.
+assign_maya | maya | no | On it. I know this rig better than anyone.
+assign_arjun | arjun | no | Finally. Leave it to me, boss.
+assign_elena | elena | no | On it.
+assign_hana | hana | no | Finally. Give me a console.
+talk_maya_idle | maya | yes | I keep recording messages for my sister. Just in case.
+talk_maya_work | maya | yes | Busy. The transmitter will not build itself.
+talk_arjun_idle | arjun | yes | This music player still won't play. Neither will half this base.
+talk_arjun_work | arjun | yes | Working. Two hours, if nothing else catches fire.
+talk_elena_idle | elena | yes | Rest when you can, Commander. You look worse than any of us.
+talk_elena_work | elena | yes | Working. Go.
+talk_hana_idle | hana | yes | They ordered us down through that storm. Remember who gave that order.
+talk_hana_work | hana | yes | Plotting a descent path for the shuttle.
+
+# --- things Kiran inspects
+ins_core_dead | - | yes | The Power Core is dead. It needs a power cell. Arjun said there is one in Storage.
+ins_comms_parts | - | yes | No transmitter yet. Antenna dish: {0}. Amplifier: {1}. Large power cell: {2}. Scrap: {3} of 2.
+ins_maya_building | - | yes | Maya is already building the transmitter.
+ins_comms_charge | - | yes | Transmitter charge {0}%. {1}
+ins_comms_out | - | yes | The transmitter is out on the ridge.
+ins_leak | - | yes | Air hisses out of a cracked pipe. Sealant would fix it. Medical keeps some.
+ins_pipe_ok | - | yes | The patch holds.
+ins_cabinet | - | yes | Medical stock. Elena keeps the cabinet locked.
+ins_hana_bed | - | yes | Hana. Health {0}. {1}
+ins_bed | - | yes | A clean bed. Hopefully it stays empty.
+ins_hana_trapped | - | yes | Hana is pinned under hull plating. She is breathing. You need the cutter from the base Storage shelf.
+ins_gen_ok | - | yes | The wreck generator hums along.
+ins_antenna_site | - | yes | A flat rock with old survey bolts. The transmitter goes here.
+ins_antenna_done | - | yes | HALCYON knows you are alive.
+ins_wreckage | - | yes | Torn hull plating from the ARK-7.
+ins_o2 | - | yes | Colony oxygen {0}. {1}
+ins_planters | - | yes | Empty planters. The greenhouse is an Act 3 job.
+ins_plot | - | yes | Empty plot: Purifier. Needs 3 ice, 2 scrap and 1 cable. An Act 3 job.
+ins_water | - | yes | Water {0}. The barrels are empty now. Only the purifier can refill them.
+ins_bunk | - | yes | Crew bunks. Nobody has slept since the crash.
+ins_lockers | - | yes | Crew lockers. Maya's has a photo of her sister taped inside.
+ins_plant | - | yes | A potted fern from the ARK-7. Somehow still alive.
+ins_lamp | - | yes | A floodlight. It runs whenever the base has power.
+ins_tree | - | yes | A frozen pine, stiff as metal.
+ins_rock | - | yes | Black rock under a crust of ice.
+ins_crate | - | yes | A crate of loose scrap.
+ins_gate | - | yes | LANDING ZONE. Locked until Hour 60, when the shuttle approach begins.
+ins_flight_log | - | yes | Flight log fragment: "HALCYON, requesting abort. Repeat, abort." The rest is burned. Added to the Journal.
+ins_flight_recorder | - | yes | The ARK-7 flight recorder. It holds the proof that HALCYON ordered the landing through the storm. Added to the Journal.
+
+# --- Act 3
+maya_act3 | maya | no | Act three, Commander. We have to last until Hour 72. Water and food first, then the storm.
+maya_pod | maya | no | Something just hit the snow west of the base. HALCYON's supply pod! Go and open it.
+voss_pod_promise | voss | yes | You reached us early. A supply pod will land beside your base at Hour 20.
+ins_pod_open | - | yes | The pod holds medical stock, an extra suit tank (+25 suit oxygen) and a charged cell for the batteries.
+ins_pod_done | - | yes | An empty HALCYON supply pod.
+voss_report_ok | voss | yes | Status received. Colony health {0} percent, target {1}. Good work, ARK-7.
+voss_report_fail_32 | voss | yes | Colony health {0} percent. We asked for {1}. You'll get less warning before the storm.
+voss_report_fail_56 | voss | yes | Colony health {0} percent, target {1}. The shuttle can't wait for you if your beacon is late.
+voss_storm_warning | voss | yes | HALCYON weather warning: a storm front hits Kepler-X in {0} hours. Secure your base.
+arjun_storm_prep | arjun | yes | Brace points west and east of the base, two scrap each. Cover the greenhouse. And leave power units free so the batteries charge.
+storm_reactor | arjun | yes | The grid is down but the reactor is carrying us. Good thing we lit it early.
+storm_batteries | arjun | yes | Main power is gone, but the batteries are carrying us. Good call, boss.
+storm_dark | arjun | yes | Main power is dead! The batteries are too low. Someone has to restart the reactor in the wreck field.
+storm_damage | elena | no | The storm tore through: {0} went offline.
+storm_ends | maya | no | The wind is dropping. Look at that sky. We made it through the storm.
+elena_first_meal | elena | yes | First harvest from the greenhouse. Real food. Sit down, everyone, just for a minute.
+arjun_purifier_done | arjun | no | Purifier's built. Give it a unit and the tanks start filling.
+elena_greenhouse_done | elena | no | Seeds are in. Eight hours under the lamps and we eat.
+arjun_coil | arjun | no | The coil holds! Two more power units. Now we can breathe.
+reactor_back | arjun | no | The reactor is back. Power is flowing again.
+reactor_crew_ok | elena | yes | {0} took a heavy dose in there. The medical stock pulled them through.
+reactor_crew_lost | elena | yes | {0} restarted the reactor, but there was no medical stock left. We lost them.
+crew_mistake | arjun | no | {0} got it wrong. Starting over.
+hana_plotted | hana | no | The descent path is plotted. When that shuttle comes, I'll talk it down.
+
+# --- Act 4
+maya_act4 | maya | no | Act four. The landing zone gate is open. Beacon, debris, lights. Then we go home.
+beacon_built | maya | no | The beacon is built. Power it from the panel and keep it on.
+voss_descent | voss | yes | ARK-7, the shuttle is on final approach. Landing in two hours. We need your beacon.
+hana_guide | hana | yes | I've got them on the scope. I'll bring them down. Just keep that beacon lit.
+maya_no_pilot | maya | yes | Without Hana, someone has to guide them in by hand. The beacon console, Commander.
+voss_glide_path | voss | no | We have your signal. Shuttle is on the glide path.
+voss_grace | voss | yes | ARK-7, we can't see your beacon! The shuttle will circle for two hours. Get it online!
+on_purifier | arjun | no | Water's flowing. Clean water!
+on_greenhouse | elena | no | Grow lamps on.
+on_beacon | maya | no | Beacon online. They'll see us from orbit.
+
+# --- inspect (Acts 3 and 4)
+ins_need_cutter | - | yes | You need the cutter from the base Storage shelf.
+ins_purifier | - | yes | The purifier hums. Water {0}.
+ins_plot_needs | - | yes | Empty plot: Purifier. Needs 3 ice (have {0}), 2 scrap (have {1}) and 1 cable (have {2}).
+ins_planter_needs | - | yes | Empty planters. Need seeds ({0}), 2 scrap (have {1}) and 1 cable (have {2}).
+ins_greenhouse | - | yes | Seedlings under the grow lamps. {0}
+ins_brace_done | - | yes | A steel brace, bolted into the ice.
+ins_brace_need | - | yes | A brace point. A brace takes 2 scrap. You have {0}.
+ins_reactor_on | - | yes | The reactor glows a steady green.
+ins_reactor_cold | - | yes | The reactor is cold. It is only worth the radiation if main power fails in the storm.
+ins_mount_done | - | yes | A landing light, burning bright.
+ins_mount_need | - | yes | A landing light mount. Each light takes 1 cable.
+ins_beacon_needs | - | yes | Beacon site. Needs the nav computer ({0}), 3 scrap (have {1}) and 2 cables (have {2}).
+ins_beacon | - | yes | The landing beacon is {0}
+
+# --- finale
+fin_E1 | - | yes | The shuttle settles onto the lit pad. One by one the crew walk out together. No one is carried. Kiran is the last to leave. "We held together."
+fin_E2 | - | yes | The colony is bright, but there are empty seats on the shuttle. Kiran trusted the crew, and still lost people. The names go on the memorial.
+fin_E3 | - | yes | Voss: "You got them out, Commander." The colony is dim; nobody ran it while Kiran was away. Kiran: "I didn't let them help."
+fin_truth_yes | - | yes | Epilogue: the flight recorder and Hana's account reach an inquiry. Director Voss is removed from command.
+fin_truth_no | - | yes | Epilogue: Director Voss receives a medal for the rescue. Nobody asks why ARK-7 was ordered down into the storm.
+fin_rough | - | yes | Without a pilot on the radio, the shuttle hits the pad hard. Everyone walks away, shaken.
+ins_water_reserve | - | yes | The emergency water barrels. That buys a few hours until the purifier runs.
+elena_weak | elena | no | {0} is getting weak. Fix the low bars or keep MEDICAL on, or we lose them.
+voss_gate_early | voss | yes | Report accepted. We have unlocked the Landing Zone gate early. Prepare the pad.
+fin_E2_alone | - | yes | The colony is bright, but every seat beside Kiran is empty. He boards the shuttle alone. The names go on the memorial.
+maya_report_soon_ok | maya | no | Status report at Hour {0}. Colony health {1} percent, HALCYON wants {2}. We are on track.
+maya_report_soon_low | maya | yes | Status report at Hour {0}. Colony health is {1} percent and HALCYON wants {2}. Refill the low bars before then.
+hana_recorder | hana | yes | Commander. The flight recorder tore off in the crash. Its beacon pings from the deep Ice Cave. With it, Voss cannot bury what happened.
+maya_recorder | maya | yes | The flight recorder is still out there, deep in the Ice Cave. Without Hana, it is our only proof of what Voss ordered.

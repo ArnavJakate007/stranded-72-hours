@@ -1,0 +1,19 @@
+# name | heavy (yes/no) | tab (Parts, Supplies, Story, Tools) | description
+Power cell | yes | Parts | Heavy. Restarts the Power Core.
+Large power cell | yes | Parts | Heavy. Powers the transmitter.
+Antenna dish | yes | Parts | Heavy. Part of the transmitter.
+Amplifier | no | Parts | Boosts the transmitter signal.
+Transmitter | yes | Parts | Heavy. Set it up on the Ridge summit.
+Scrap | no | Parts | Common salvage. The transmitter frame needs 2.
+Cables | no | Parts | Wiring. Needed in later acts.
+Sealant | no | Supplies | Seals the oxygen leak.
+Trauma kit | no | Supplies | For Hana. Give it to Elena.
+Cutter | no | Tools | Cuts through debris.
+Flight log | no | Story | "HALCYON, requesting abort. Repeat, abort." The rest is burned.
+Flight recorder | no | Story | The black box. It proves HALCYON ordered the landing through the storm.
+Ice | no | Parts | Clean ice from the cave. The purifier needs 3 loads.
+Seeds | no | Supplies | Greenhouse samples from the ARK-7 cargo bay.
+Generator coil | yes | Parts | Heavy. Install it at the Power Core for 2 more power units.
+Nav computer | no | Parts | The ARK-7 navigation computer. The landing beacon needs it.
+Thermal layer | no | Tools | Stops cold damage in deep zones.
+Medical stock | no | Supplies | Treats radiation sickness. Keep one ready for the reactor.

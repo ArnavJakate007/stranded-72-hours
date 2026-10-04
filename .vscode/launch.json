@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug STRANDED",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}\\build\\STRANDED.exe",
+      "cwd": "${workspaceFolder}\\build",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:\\mingw64\\bin\\gdb.exe",
+      "preLaunchTask": "Build STRANDED (debug)",
+      "externalConsole": false
+    }
+  ]
+}
